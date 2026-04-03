@@ -54,9 +54,18 @@ a:focus-visible {
 
 /* Fancybox customization */
 .fancybox__container {
-  --fancybox-bg: rgba(255, 255, 255, 0.97);
-  --fancybox-color: #666666;
-  font-family: Helvetica, Arial, sans-serif;
+  --fancybox-bg: rgba(255, 255, 255, 0.97) !important;
+  --fancybox-color: #666666 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+/* Override background direttamente */
+.fancybox__container::before {
+  background: rgba(255, 255, 255, 0.97) !important;
+}
+
+div[id^="fancybox"] {
+  background: rgba(255, 255, 255, 0.97) !important;
 }
 
 /* Hide thumbnails */
@@ -77,13 +86,26 @@ a:focus-visible {
   color: #666666 !important;
   font-family: Helvetica, Arial, sans-serif !important;
   text-align: center;
+  background: transparent !important;
 }
 
-/* Buttons color */
-.fancybox__button {
+/* Buttons */
+.fancybox__button,
+.carousel__button {
+  color: #666666 !important;
+  background: transparent !important;
+}
+
+/* Toolbar */
+.fancybox__toolbar {
+  background: rgba(255, 255, 255, 0.95) !important;
   color: #666666 !important;
 }
 
+/* Backdrop */
+.fancybox__backdrop {
+  background: rgba(255, 255, 255, 0.97) !important;
+}
 /* Toolbar bg */
 .fancybox__toolbar {
   background: rgba(255, 255, 255, 0.9) !important;
