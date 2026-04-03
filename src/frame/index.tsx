@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 export function Frame() {
   return (
     <header className={`frame ${styles.frame}`}>
-      <h1 className={styles.frame__title}>Infinite Canvas</h1>
+      <h1 className={styles.frame__title}>Marco Cascella</h1>
       <a className={styles.frame__back} href="https://tympanus.net/codrops/?p=106679">
         Article
       </a>
