@@ -309,7 +309,7 @@ function SceneController({
   React.useEffect(() => {
     galleryItems = media.map((m) => ({
       src: m.url.startsWith("http") ? m.url : `/${m.url}`,
-      caption: [m.title, m.artist, m.year].filter(Boolean).join(" — "),
+      caption: [m.title, m.year, m.size, m.technique].filter(Boolean).join(" — "),
     }));
   }, [media]);
 
