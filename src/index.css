@@ -54,17 +54,11 @@ a:focus-visible {
 
 /* Fancybox customization */
 .fancybox__container {
-  --fancybox-bg: rgba(255, 255, 255, 0.97) !important;
-  --fancybox-color: #666666 !important;
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-/* Override background direttamente */
-.fancybox__container::before {
-  background: rgba(255, 255, 255, 0.97) !important;
-}
-
-div[id^="fancybox"] {
+/* Backdrop bianco */
+.fancybox__backdrop {
   background: rgba(255, 255, 255, 0.97) !important;
 }
 
@@ -73,40 +67,68 @@ div[id^="fancybox"] {
   display: none !important;
 }
 
-/* Counter font smaller */
+/* Counter - piccolo, grigio, no bold */
 .fancybox__infobar {
-  font-size: 11px !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
   color: #666666 !important;
   font-family: Helvetica, Arial, sans-serif !important;
-}
-
-/* Caption */
-.fancybox__caption {
-  font-size: 11px !important;
-  color: #666666 !important;
-  font-family: Helvetica, Arial, sans-serif !important;
-  text-align: center;
+  text-shadow: none !important;
   background: transparent !important;
 }
 
-/* Buttons */
+/* Caption - più grande, spaziatura lettere */
+.fancybox__caption {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #666666 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  letter-spacing: 0.08em !important;
+  text-align: center !important;
+  background: transparent !important;
+  text-shadow: none !important;
+}
+
+/* Toolbar trasparente */
+.fancybox__toolbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Tutti i bottoni - no bg, no shadow, grigio */
 .fancybox__button,
 .carousel__button {
   color: #666666 !important;
   background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border: none !important;
 }
 
-/* Toolbar */
-.fancybox__toolbar {
-  background: rgba(255, 255, 255, 0.95) !important;
+/* Hover sui bottoni */
+.fancybox__button:hover,
+.carousel__button:hover {
+  color: #333333 !important;
+  background: transparent !important;
+}
+
+/* Frecce navigazione */
+.carousel__button.is-prev,
+.carousel__button.is-next {
+  background: transparent !important;
+  box-shadow: none !important;
   color: #666666 !important;
 }
 
-/* Backdrop */
-.fancybox__backdrop {
-  background: rgba(255, 255, 255, 0.97) !important;
+.carousel__button.is-prev:hover,
+.carousel__button.is-next:hover {
+  color: #333333 !important;
+  background: transparent !important;
 }
-/* Toolbar bg */
-.fancybox__toolbar {
-  background: rgba(255, 255, 255, 0.9) !important;
+
+/* SVG icone dentro i bottoni */
+.fancybox__button svg,
+.carousel__button svg {
+  filter: none !important;
+  stroke: currentColor !important;
 }
