@@ -132,3 +132,39 @@ a:focus-visible {
   filter: none !important;
   stroke: currentColor !important;
 }
+
+/* Forza trasparenza su tutti gli stati */
+.fancybox__button,
+.carousel__button,
+.fancybox__button:hover,
+.fancybox__button:focus,
+.fancybox__button:active,
+.carousel__button:hover,
+.carousel__button:focus,
+.carousel__button:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Icone SVG grigie */
+.fancybox__button svg path,
+.fancybox__button svg line,
+.fancybox__button svg polyline,
+.carousel__button svg path,
+.carousel__button svg line,
+.carousel__button svg polyline {
+  stroke: #666666 !important;
+  fill: none !important;
+}
+
+/* Hover icone più scure */
+.fancybox__button:hover svg path,
+.fancybox__button:hover svg line,
+.fancybox__button:hover svg polyline,
+.carousel__button:hover svg path,
+.carousel__button:hover svg line,
+.carousel__button:hover svg polyline {
+  stroke: #333333 !important;
+}
