@@ -51,3 +51,40 @@ a:focus-visible {
   position: relative;
   min-height: 100svh;
 }
+
+/* Fancybox customization */
+.fancybox__container {
+  --fancybox-bg: rgba(255, 255, 255, 0.97);
+  --fancybox-color: #666666;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Hide thumbnails */
+.fancybox__thumbs {
+  display: none !important;
+}
+
+/* Counter font smaller */
+.fancybox__infobar {
+  font-size: 11px !important;
+  color: #666666 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+/* Caption */
+.fancybox__caption {
+  font-size: 11px !important;
+  color: #666666 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  text-align: center;
+}
+
+/* Buttons color */
+.fancybox__button {
+  color: #666666 !important;
+}
+
+/* Toolbar bg */
+.fancybox__toolbar {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
