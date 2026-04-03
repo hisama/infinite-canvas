@@ -4,6 +4,10 @@ export type MediaItem = {
   url: string;
   width: number;
   height: number;
+  title?: string;
+  artist?: string;
+  year?: string;
+  link?: string;
 };
 
 export type InfiniteCanvasProps = {
