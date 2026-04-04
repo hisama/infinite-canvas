@@ -8,6 +8,8 @@ export type MediaItem = {
   artist?: string;
   year?: string;
   link?: string;
+  technique?: string;
+  size?: string;
 };
 
 export type InfiniteCanvasProps = {
