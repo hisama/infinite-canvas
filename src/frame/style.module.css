@@ -19,6 +19,7 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 .frame a:focus {
   outline: none;
