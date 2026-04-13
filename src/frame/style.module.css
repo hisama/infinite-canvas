@@ -8,12 +8,12 @@
   pointer-events: none;
   justify-items: start;
   align-items: center;
-  grid-template-columns: auto auto auto auto 1fr;
+  grid-template-columns: auto auto auto auto auto 1fr;
   grid-template-areas:
-    "title title credits ..."
-    "back archive github ..."
-    "tags tags tags tags"
-    "sponsor sponsor sponsor sponsor";
+    "title title title title credits ..."
+    "back gallery sky archive github ..."
+    "tags tags tags tags tags tags"
+    "sponsor sponsor sponsor sponsor sponsor sponsor";
   color: #fff;
   mix-blend-mode: difference;
   font-family: "DM Sans", sans-serif;
@@ -21,14 +21,16 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-.frame a:focus {
-  outline: none;
-}
+
 .frame a,
 .frame button {
   pointer-events: auto;
   color: #fff;
   mix-blend-mode: difference;
+}
+
+.frame a:focus {
+  outline: none;
 }
 
 .frame__title {
@@ -47,14 +49,18 @@
   display: block;
 }
 
-@media screen and (max-width: 52.9em) {
-  .frame__logo {
-    width: clamp(140px, 55vw, 260px);
-  }
-}
-
 .frame__back {
   grid-area: back;
+  justify-self: start;
+}
+
+.frame__gallery {
+  grid-area: gallery;
+  justify-self: start;
+}
+
+.frame__sky {
+  grid-area: sky;
   justify-self: start;
 }
 
@@ -92,18 +98,21 @@
     left: 0;
     width: 100%;
     grid-column-gap: 2rem;
-    grid-template-columns: auto auto auto 1fr;
+    grid-template-columns: auto auto auto auto auto 1fr;
     grid-template-rows: auto auto auto;
     align-content: space-between;
     grid-template-areas:
-      "back github archive ... credits"
-      "title title title title title"
-      "tags tags tags tags sponsor";
+      "back gallery sky archive github ... credits"
+      "title title title title title title title"
+      "tags tags tags tags tags tags sponsor";
   }
 
   .frame__title {
     justify-self: center;
-    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .frame__logo {
+    width: clamp(160px, 28vw, 340px);
   }
 
   .frame__tags {
@@ -113,5 +122,11 @@
 
   .frame__credits {
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 52.9em) {
+  .frame__logo {
+    width: clamp(140px, 55vw, 260px);
   }
 }
