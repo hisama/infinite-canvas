@@ -20,7 +20,9 @@
   font-weight: 300;
   text-transform: uppercase;
 }
-
+.frame a:focus {
+  outline: none;
+}
 .frame a,
 .frame button {
   pointer-events: auto;
