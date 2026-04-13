@@ -30,12 +30,24 @@
 
 .frame__title {
   grid-area: title;
-  font-family: "Asul", serif;
-  font-size: 1rem;
-  font-weight: 400;
   margin: 0;
   color: #fff;
   mix-blend-mode: difference;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame__logo {
+  width: clamp(160px, 28vw, 340px);
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 52.9em) {
+  .frame__logo {
+    width: clamp(140px, 55vw, 260px);
+  }
 }
 
 .frame__back {
