@@ -1,6 +1,6 @@
 [
   {
-    "url": "artworks/1985_01.jpg",
+    "url": "artworks/1985_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -11,7 +11,7 @@
     "height": 335
   },
   {
-    "url": "artworks/1985_02.jpg",
+    "url": "artworks/1985_02.webp",
     "type": "image",
     "title": "la svolta che mi ha allargato l'orizzonte",
     "year": "1985",
@@ -22,7 +22,7 @@
     "height": 728
   },
   {
-    "url": "artworks/1985_03.jpg",
+    "url": "artworks/1985_03.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -33,7 +33,7 @@
     "height": 493
   },
   {
-    "url": "artworks/1985_04.jpg",
+    "url": "artworks/1985_04.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -44,7 +44,7 @@
     "height": 705
   },
   {
-    "url": "artworks/1985_05.jpg",
+    "url": "artworks/1985_05.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -55,7 +55,7 @@
     "height": 469
   },
   {
-    "url": "artworks/1985_06.jpg",
+    "url": "artworks/1985_06.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -66,7 +66,7 @@
     "height": 486
   },
   {
-    "url": "artworks/1985_07.jpg",
+    "url": "artworks/1985_07.webp",
     "type": "image",
     "title": "No title",
     "year": "1985",
@@ -77,7 +77,7 @@
     "height": 496
   },
   {
-    "url": "artworks/1986_01.jpg",
+    "url": "artworks/1986_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1986",
@@ -88,7 +88,7 @@
     "height": 444
   },
   {
-    "url": "artworks/1986_02.jpg",
+    "url": "artworks/1986_02.webp",
     "type": "image",
     "title": "No title",
     "year": "1986",
@@ -99,7 +99,7 @@
     "height": 475
   },
   {
-    "url": "artworks/1987_01.jpg",
+    "url": "artworks/1987_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1987",
@@ -110,7 +110,7 @@
     "height": 418
   },
   {
-    "url": "artworks/1987_02.jpg",
+    "url": "artworks/1987_02.webp",
     "type": "image",
     "title": "No title",
     "year": "1987",
@@ -121,7 +121,7 @@
     "height": 427
   },
   {
-    "url": "artworks/1987_03.jpg",
+    "url": "artworks/1987_03.webp",
     "type": "image",
     "title": "No title",
     "year": "1987",
@@ -132,7 +132,7 @@
     "height": 399
   },
   {
-    "url": "artworks/1987_04.jpg",
+    "url": "artworks/1987_04.webp",
     "type": "image",
     "title": "No title",
     "year": "1987",
@@ -143,7 +143,7 @@
     "height": 450
   },
   {
-    "url": "artworks/1988_01.jpg",
+    "url": "artworks/1988_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -154,7 +154,7 @@
     "height": 426
   },
   {
-    "url": "artworks/1988_02.jpg",
+    "url": "artworks/1988_02.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -165,7 +165,7 @@
     "height": 369
   },
   {
-    "url": "artworks/1988_03.jpg",
+    "url": "artworks/1988_03.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -176,7 +176,7 @@
     "height": 374
   },
   {
-    "url": "artworks/1988_04.jpg",
+    "url": "artworks/1988_04.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -187,7 +187,7 @@
     "height": 417
   },
   {
-    "url": "artworks/1988_05.jpg",
+    "url": "artworks/1988_05.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -198,7 +198,7 @@
     "height": 384
   },
   {
-    "url": "artworks/1988_06.jpg",
+    "url": "artworks/1988_06.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -209,7 +209,7 @@
     "height": 364
   },
   {
-    "url": "artworks/1988_07.jpg",
+    "url": "artworks/1988_07.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -220,7 +220,7 @@
     "height": 374
   },
   {
-    "url": "artworks/1988_08.jpg",
+    "url": "artworks/1988_08.webp",
     "type": "image",
     "title": "No title",
     "year": "1988",
@@ -231,7 +231,7 @@
     "height": 362
   },
   {
-    "url": "artworks/1992_01.jpg",
+    "url": "artworks/1992_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1992",
@@ -242,7 +242,7 @@
     "height": 373
   },
   {
-    "url": "artworks/1992_02.jpg",
+    "url": "artworks/1992_02.webp",
     "type": "image",
     "title": "No title",
     "year": "1992",
@@ -253,7 +253,7 @@
     "height": 600
   },
   {
-    "url": "artworks/1993_01.jpg",
+    "url": "artworks/1993_01.webp",
     "type": "image",
     "title": "No title",
     "year": "1993",
@@ -264,7 +264,7 @@
     "height": 312
   },
   {
-    "url": "artworks/1993_02.jpg",
+    "url": "artworks/1993_02.webp",
     "type": "image",
     "title": "No title",
     "year": "1993",
@@ -275,7 +275,7 @@
     "height": 308
   },
   {
-    "url": "artworks/1993_03.jpg",
+    "url": "artworks/1993_03.webp",
     "type": "image",
     "title": "No title",
     "year": "1993",
@@ -286,7 +286,7 @@
     "height": 319
   },
   {
-    "url": "artworks/1993_04.jpg",
+    "url": "artworks/1993_04.webp",
     "type": "image",
     "title": "No title",
     "year": "1993",
@@ -297,7 +297,7 @@
     "height": 304
   },
   {
-    "url": "artworks/1993_05.jpg",
+    "url": "artworks/1993_05.webp",
     "type": "image",
     "title": "No title",
     "year": "1993",
@@ -308,7 +308,7 @@
     "height": 629
   },
   {
-    "url": "artworks/1995_01.jpg",
+    "url": "artworks/1995_01.webp",
     "type": "image",
     "title": "Video Game",
     "year": "1995",
@@ -319,7 +319,7 @@
     "height": 323
   },
   {
-    "url": "artworks/1996_01.jpg",
+    "url": "artworks/1996_01.webp",
     "type": "image",
     "title": "Iron Butterfly",
     "year": "1996",
@@ -330,7 +330,7 @@
     "height": 321
   },
   {
-    "url": "artworks/1996_02.jpg",
+    "url": "artworks/1996_02.webp",
     "type": "image",
     "title": "Electric plane",
     "year": "1996",
@@ -341,7 +341,7 @@
     "height": 603
   },
   {
-    "url": "artworks/1996_03.jpg",
+    "url": "artworks/1996_03.webp",
     "type": "image",
     "title": "Night trip",
     "year": "1996",
@@ -352,7 +352,7 @@
     "height": 316
   },
   {
-    "url": "artworks/2000_01.jpg",
+    "url": "artworks/2000_01.webp",
     "type": "image",
     "title": "Sky window",
     "year": "2000",
@@ -363,7 +363,7 @@
     "height": 318
   },
   {
-    "url": "artworks/2000_02.jpg",
+    "url": "artworks/2000_02.webp",
     "type": "image",
     "title": "Through the valley",
     "year": "2000",
@@ -374,7 +374,7 @@
     "height": 419
   },
   {
-    "url": "artworks/2002_01.jpg",
+    "url": "artworks/2002_01.webp",
     "type": "image",
     "title": "Surfing the turbolence of my soul",
     "year": "2002",
@@ -385,7 +385,7 @@
     "height": 315
   },
   {
-    "url": "artworks/2003_01.jpg",
+    "url": "artworks/2003_01.webp",
     "type": "image",
     "title": "Oscuri misteri del mio animo",
     "year": "2003",
@@ -396,7 +396,7 @@
     "height": 317
   },
   {
-    "url": "artworks/2003_02.jpg",
+    "url": "artworks/2003_02.webp",
     "type": "image",
     "title": "Contemplazione del vuoto",
     "year": "2003",
@@ -407,7 +407,7 @@
     "height": 316
   },
   {
-    "url": "artworks/2004_01.jpg",
+    "url": "artworks/2004_01.webp",
     "type": "image",
     "title": "Blue vision",
     "year": "2004",
@@ -418,7 +418,7 @@
     "height": 371
   },
   {
-    "url": "artworks/2006_01.jpg",
+    "url": "artworks/2006_01.webp",
     "type": "image",
     "title": "Excursion in the grey",
     "year": "2006",
@@ -429,7 +429,7 @@
     "height": 395
   },
   {
-    "url": "artworks/2006_02.jpg",
+    "url": "artworks/2006_02.webp",
     "type": "image",
     "title": "Ceossing strange land",
     "year": "2006",
@@ -440,7 +440,7 @@
     "height": 354
   },
   {
-    "url": "artworks/2006_03.jpg",
+    "url": "artworks/2006_03.webp",
     "type": "image",
     "title": "Prima dell'oscurita",
     "year": "2006",
@@ -451,7 +451,7 @@
     "height": 307
   },
   {
-    "url": "artworks/2007_01.jpg",
+    "url": "artworks/2007_01.webp",
     "type": "image",
     "title": "Viaggo della mente",
     "year": "2007",
@@ -462,7 +462,7 @@
     "height": 317
   },
   {
-    "url": "artworks/2007_02.jpg",
+    "url": "artworks/2007_02.webp",
     "type": "image",
     "title": "Outskirts of paradise",
     "year": "2007",
@@ -473,7 +473,7 @@
     "height": 314
   },
   {
-    "url": "artworks/2007_03.jpg",
+    "url": "artworks/2007_03.webp",
     "type": "image",
     "title": "Waiting the dark",
     "year": "2007",
@@ -484,7 +484,7 @@
     "height": 243
   },
   {
-    "url": "artworks/2007_04.jpg",
+    "url": "artworks/2007_04.webp",
     "type": "image",
     "title": "Night trip",
     "year": "2007",
@@ -495,7 +495,7 @@
     "height": 316
   },
   {
-    "url": "artworks/2010_01.jpg",
+    "url": "artworks/2010_01.webp",
     "type": "image",
     "title": "Energia in avvicinamento",
     "year": "2010",
@@ -506,7 +506,7 @@
     "height": 311
   },
   {
-    "url": "artworks/2010_03.jpg",
+    "url": "artworks/2010_03.webp",
     "type": "image",
     "title": "Dark feeling",
     "year": "2010",
@@ -517,7 +517,7 @@
     "height": 545
   },
   {
-    "url": "artworks/2011_01.jpg",
+    "url": "artworks/2011_01.webp",
     "type": "image",
     "title": "Al di là delle nuvole e di acque tempestose",
     "year": "2011",
@@ -528,7 +528,7 @@
     "height": 318
   },
   {
-    "url": "artworks/2011_02.jpg",
+    "url": "artworks/2011_02.webp",
     "type": "image",
     "title": "Big energy",
     "year": "2011",
@@ -539,7 +539,7 @@
     "height": 320
   },
   {
-    "url": "artworks/2012_01.jpg",
+    "url": "artworks/2012_01.webp",
     "type": "image",
     "title": "Dream place",
     "year": "2012",
@@ -550,7 +550,7 @@
     "height": 296
   },
   {
-    "url": "artworks/2012_02.jpg",
+    "url": "artworks/2012_02.webp",
     "type": "image",
     "title": "Space elements disposition",
     "year": "2012",
@@ -561,7 +561,7 @@
     "height": 296
   },
   {
-    "url": "artworks/2012_03.jpg",
+    "url": "artworks/2012_03.webp",
     "type": "image",
     "title": "Blue in grey",
     "year": "2012",
@@ -572,7 +572,7 @@
     "height": 374
   },
   {
-    "url": "artworks/2012_04.jpg",
+    "url": "artworks/2012_04.webp",
     "type": "image",
     "title": "Verso la fucina del vulcano",
     "year": "2012",
@@ -583,7 +583,7 @@
     "height": 236
   },
   {
-    "url": "artworks/2013_01.jpg",
+    "url": "artworks/2013_01.webp",
     "type": "image",
     "title": "Waiting for the night",
     "year": "2013",
@@ -594,7 +594,7 @@
     "height": 247
   },
   {
-    "url": "artworks/2013_02.jpg",
+    "url": "artworks/2013_02.webp",
     "type": "image",
     "title": "Opening in the mind",
     "year": "2013",
@@ -605,7 +605,7 @@
     "height": 245
   },
   {
-    "url": "artworks/2013_03.jpg",
+    "url": "artworks/2013_03.webp",
     "type": "image",
     "title": "From abyss to the blue",
     "year": "2013",
@@ -616,7 +616,7 @@
     "height": 359
   },
   {
-    "url": "artworks/2015_01.jpg",
+    "url": "artworks/2015_01.webp",
     "type": "image",
     "title": "Life forms playing",
     "year": "2015",
@@ -627,7 +627,7 @@
     "height": 362
   },
   {
-    "url": "artworks/2015_02.jpg",
+    "url": "artworks/2015_02.webp",
     "type": "image",
     "title": "Balance of elements in the space",
     "year": "2015",
@@ -638,7 +638,7 @@
     "height": 295
   },
   {
-    "url": "artworks/2015_03.jpg",
+    "url": "artworks/2015_03.webp",
     "type": "image",
     "title": "Grey meditation",
     "year": "2015",
@@ -648,8 +648,8 @@
     "width": 600,
     "height": 316
   },
-   {
-    "url": "artworks/2015_04.jpg",
+  {
+    "url": "artworks/2015_04.webp",
     "type": "image",
     "title": "Blue universe",
     "year": "2015",
@@ -660,7 +660,7 @@
     "height": 306
   },
   {
-    "url": "artworks/2016_01.jpg",
+    "url": "artworks/2016_01.webp",
     "type": "image",
     "title": "Roads to perdition",
     "year": "2016",
@@ -671,7 +671,7 @@
     "height": 321
   },
   {
-    "url": "artworks/2016_02.jpg",
+    "url": "artworks/2016_02.webp",
     "type": "image",
     "title": "Land of games",
     "year": "2016",
@@ -682,7 +682,7 @@
     "height": 320
   },
   {
-    "url": "artworks/2016_03.jpg",
+    "url": "artworks/2016_03.webp",
     "type": "image",
     "title": "Soul balance",
     "year": "2016",
@@ -693,7 +693,7 @@
     "height": 321
   },
   {
-    "url": "artworks/2016_04.jpg",
+    "url": "artworks/2016_04.webp",
     "type": "image",
     "title": "Black road to the blue",
     "year": "2016",
@@ -704,7 +704,7 @@
     "height": 321
   },
   {
-    "url": "artworks/2016_05.jpg",
+    "url": "artworks/2016_05.webp",
     "type": "image",
     "title": "Emerging energy",
     "year": "2016",
@@ -715,7 +715,7 @@
     "height": 320
   },
   {
-    "url": "artworks/2017_01.jpg",
+    "url": "artworks/2017_01.webp",
     "type": "image",
     "title": "Inside blue",
     "year": "2016",
@@ -726,7 +726,7 @@
     "height": 319
   },
   {
-    "url": "artworks/2017_02.jpg",
+    "url": "artworks/2017_02.webp",
     "type": "image",
     "title": "Dark water",
     "year": "2017",
@@ -737,7 +737,7 @@
     "height": 317
   },
   {
-    "url": "artworks/2017_03.jpg",
+    "url": "artworks/2017_03.webp",
     "type": "image",
     "title": "Looking for the peace of mind",
     "year": "2017",
@@ -748,7 +748,7 @@
     "height": 310
   },
   {
-    "url": "artworks/2017_04.jpg",
+    "url": "artworks/2017_04.webp",
     "type": "image",
     "title": "Serene spirit",
     "year": "2017",
@@ -759,7 +759,7 @@
     "height": 315
   },
   {
-    "url": "artworks/2019_01.jpg",
+    "url": "artworks/2019_01.webp",
     "type": "image",
     "title": "In black (video game)",
     "year": "2019",
@@ -770,7 +770,7 @@
     "height": 318
   },
   {
-    "url": "artworks/2019_02.jpg",
+    "url": "artworks/2019_02.webp",
     "type": "image",
     "title": "Race under night sky",
     "year": "2019",
@@ -781,7 +781,7 @@
     "height": 321
   },
   {
-    "url": "artworks/2019_03.jpg",
+    "url": "artworks/2019_03.webp",
     "type": "image",
     "title": "Waiting for the night",
     "year": "2019",
@@ -792,7 +792,7 @@
     "height": 313
   },
   {
-    "url": "artworks/2020_01.jpg",
+    "url": "artworks/2020_01.webp",
     "type": "image",
     "title": "Opening in the grey",
     "year": "2020",
@@ -803,7 +803,7 @@
     "height": 317
   },
   {
-    "url": "artworks/2020_02.jpg",
+    "url": "artworks/2020_02.webp",
     "type": "image",
     "title": "In black",
     "year": "2020",
@@ -814,7 +814,7 @@
     "height": 308
   },
   {
-    "url": "artworks/2020_03.jpg",
+    "url": "artworks/2020_03.webp",
     "type": "image",
     "title": "Blue trail",
     "year": "2020",
@@ -825,7 +825,7 @@
     "height": 236
   },
   {
-    "url": "artworks/2020_04.jpg",
+    "url": "artworks/2020_04.webp",
     "type": "image",
     "title": "Through the grey with storm",
     "year": "2020",
@@ -836,7 +836,7 @@
     "height": 321
   },
   {
-    "url": "artworks/2021_01.jpg",
+    "url": "artworks/2021_01.webp",
     "type": "image",
     "title": "The dawn",
     "year": "2021",
@@ -847,7 +847,7 @@
     "height": 309
   },
   {
-    "url": "artworks/2021_02.jpg",
+    "url": "artworks/2021_02.webp",
     "type": "image",
     "title": "Blue form in dark plane",
     "year": "2021",
@@ -858,7 +858,7 @@
     "height": 309
   },
   {
-    "url": "artworks/2022_01.jpg",
+    "url": "artworks/2022_01.webp",
     "type": "image",
     "title": "Cosmic event",
     "year": "2022",
@@ -869,7 +869,7 @@
     "height": 310
   },
   {
-    "url": "artworks/2022_02.jpg",
+    "url": "artworks/2022_02.webp",
     "type": "image",
     "title": "Alien sky",
     "year": "2022",
@@ -880,7 +880,7 @@
     "height": 273
   },
   {
-    "url": "artworks/2022_03.jpg",
+    "url": "artworks/2022_03.webp",
     "type": "image",
     "title": "Soul feeling",
     "year": "2022",
@@ -891,7 +891,7 @@
     "height": 293
   },
   {
-    "url": "artworks/2022_04.jpg",
+    "url": "artworks/2022_04.webp",
     "type": "image",
     "title": "In the violet",
     "year": "2022",
@@ -902,7 +902,7 @@
     "height": 319
   },
   {
-    "url": "artworks/2022_05.jpg",
+    "url": "artworks/2022_05.webp",
     "type": "image",
     "title": "Cyclone",
     "year": "2022",
@@ -913,7 +913,7 @@
     "height": 314
   },
   {
-    "url": "artworks/2022_06.jpg",
+    "url": "artworks/2022_06.webp",
     "type": "image",
     "title": "Opening",
     "year": "2022",
@@ -924,7 +924,7 @@
     "height": 281
   },
   {
-    "url": "artworks/2023_01.jpg",
+    "url": "artworks/2023_01.webp",
     "type": "image",
     "title": "Black and trouble",
     "year": "2023",
@@ -935,7 +935,7 @@
     "height": 287
   },
   {
-    "url": "artworks/2023_02.jpg",
+    "url": "artworks/2023_02.webp",
     "type": "image",
     "title": "Road to the unknown",
     "year": "2023",
@@ -946,7 +946,7 @@
     "height": 338
   },
   {
-    "url": "artworks/2023_03.jpg",
+    "url": "artworks/2023_03.webp",
     "type": "image",
     "title": "Night",
     "year": "2023",
@@ -957,7 +957,7 @@
     "height": 302
   },
   {
-    "url": "artworks/2023_04.jpg",
+    "url": "artworks/2023_04.webp",
     "type": "image",
     "title": "Notturno",
     "year": "2023",
@@ -968,7 +968,7 @@
     "height": 376
   },
   {
-    "url": "artworks/2023_05.jpg",
+    "url": "artworks/2023_05.webp",
     "type": "image",
     "title": "No title",
     "year": "2023",
@@ -979,7 +979,7 @@
     "height": 442
   },
   {
-    "url": "artworks/2024_01.jpg",
+    "url": "artworks/2024_01.webp",
     "type": "image",
     "title": "Heavy horizon",
     "year": "2024",
@@ -990,7 +990,7 @@
     "height": 397
   },
   {
-    "url": "artworks/2024_02.jpg",
+    "url": "artworks/2024_02.webp",
     "type": "image",
     "title": "Desolate land under alien sky",
     "year": "2024",
@@ -1001,7 +1001,7 @@
     "height": 349
   },
   {
-    "url": "artworks/2025_01.jpg",
+    "url": "artworks/2025_01.webp",
     "type": "image",
     "title": "Sudden turbolence",
     "year": "2025",
@@ -1012,7 +1012,7 @@
     "height": 328
   },
   {
-    "url": "artworks/2025_02.jpg",
+    "url": "artworks/2025_02.webp",
     "type": "image",
     "title": "Virtual plane",
     "year": "2025",
@@ -1023,7 +1023,7 @@
     "height": 418
   },
   {
-    "url": "artworks/2025_03.jpg",
+    "url": "artworks/2025_03.webp",
     "type": "image",
     "title": "Imaginary landscape",
     "year": "2025",
@@ -1034,7 +1034,7 @@
     "height": 310
   },
   {
-    "url": "artworks/2025_04.jpg",
+    "url": "artworks/2025_04.webp",
     "type": "image",
     "title": "No title",
     "year": "2025",
@@ -1045,7 +1045,7 @@
     "height": 294
   },
   {
-    "url": "artworks/2025_05.jpg",
+    "url": "artworks/2025_05.webp",
     "type": "image",
     "title": "Through the storm",
     "year": "2025",
@@ -1056,7 +1056,7 @@
     "height": 298
   },
   {
-    "url": "artworks/2026_01.jpg",
+    "url": "artworks/2026_01.webp",
     "type": "image",
     "title": "Blue rainbow at the end of the storm",
     "year": "2025",
