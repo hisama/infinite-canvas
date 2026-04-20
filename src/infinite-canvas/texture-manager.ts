@@ -3,6 +3,8 @@ import type { MediaItem } from "./types";
 
 const textureCache = new Map<string, THREE.Texture>();
 const loadCallbacks = new Map<string, Set<(tex: THREE.Texture) => void>>();
+// Track active Image loads so we can cancel them if the plane leaves view before loading completes
+const pendingLoads = new Map<string, HTMLImageElement>();
 const loader = new THREE.TextureLoader();
 
 const isTextureLoaded = (tex: THREE.Texture): boolean => {
@@ -39,6 +41,8 @@ export const getTexture = (item: MediaItem, onLoad?: (texture: THREE.Texture) =>
       tex.colorSpace = THREE.SRGBColorSpace;
       tex.needsUpdate = true;
 
+      pendingLoads.delete(key);
+
       loadCallbacks.get(key)?.forEach((cb) => {
         try {
           cb(tex);
@@ -49,9 +53,40 @@ export const getTexture = (item: MediaItem, onLoad?: (texture: THREE.Texture) =>
       loadCallbacks.delete(key);
     },
     undefined,
-    (err) => console.error("Texture load failed:", key, err)
+    (err) => {
+      pendingLoads.delete(key);
+      console.error("Texture load failed:", key, err);
+    }
   );
+
+  // Track the underlying Image element for potential cancellation
+  if (texture.image instanceof HTMLImageElement) {
+    pendingLoads.set(key, texture.image);
+  }
 
   textureCache.set(key, texture);
   return texture;
+};
+
+/**
+ * Removes a load callback for a texture without cancelling the download.
+ * The texture stays cached if already loading — only the callback is dropped.
+ */
+export const cancelTextureCallback = (item: MediaItem, onLoad: (tex: THREE.Texture) => void): void => {
+  loadCallbacks.get(item.url)?.delete(onLoad);
+};
+
+/**
+ * Returns true if the texture for this item is already fully loaded in cache.
+ */
+export const isTextureCached = (item: MediaItem): boolean => {
+  const tex = textureCache.get(item.url);
+  return tex !== undefined && isTextureLoaded(tex);
+};
+
+/**
+ * Returns the cached texture synchronously if available, otherwise null.
+ */
+export const getCachedTexture = (item: MediaItem): THREE.Texture | null => {
+  return textureCache.get(item.url) ?? null;
 };

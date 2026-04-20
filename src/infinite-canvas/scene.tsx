@@ -21,7 +21,7 @@ import {
   VELOCITY_LERP,
 } from "./constants";
 import styles from "./style.module.css";
-import { getTexture } from "./texture-manager";
+import { cancelTextureCallback, getCachedTexture, getTexture } from "./texture-manager";
 import type { ChunkData, InfiniteCanvasProps, MediaItem, PlaneData } from "./types";
 import { generateChunkPlanesCached, getChunkUpdateThrottleMs, shouldThrottleUpdate } from "./utils";
 
@@ -63,6 +63,10 @@ type CameraGridState = {
 // Global gallery items for Fancybox
 let galleryItems: { src: string; caption: string }[] = [];
 
+// How many chunks away a plane must be before we bother loading its texture.
+// RENDER_DISTANCE + 1 means we start loading one chunk ahead of visibility.
+const TEXTURE_LOAD_DISTANCE = RENDER_DISTANCE + 1;
+
 function MediaPlane({
   position,
   scale,
@@ -89,6 +93,15 @@ function MediaPlane({
   const [texture, setTexture] = React.useState<THREE.Texture | null>(null);
   const [isReady, setIsReady] = React.useState(false);
 
+  // Lazy load: only request the texture when the chunk is close enough to be visible
+  const [shouldLoad, setShouldLoad] = React.useState(() => {
+    // If already cached, load immediately regardless of distance
+    if (getCachedTexture(media)) return true;
+    const cam = cameraGridRef.current;
+    const dist = Math.max(Math.abs(chunkCx - cam.cx), Math.abs(chunkCy - cam.cy), Math.abs(chunkCz - cam.cz));
+    return dist <= TEXTURE_LOAD_DISTANCE;
+  });
+
   useFrame(() => {
     const material = materialRef.current;
     const mesh = meshRef.current;
@@ -97,6 +110,15 @@ function MediaPlane({
     if (!material || !mesh) return;
 
     state.frame = (state.frame + 1) & 1;
+
+    // Trigger lazy load once chunk enters load range (check every other frame)
+    if (!shouldLoad && state.frame === 0) {
+      const cam = cameraGridRef.current;
+      const dist = Math.max(Math.abs(chunkCx - cam.cx), Math.abs(chunkCy - cam.cy), Math.abs(chunkCz - cam.cz));
+      if (dist <= TEXTURE_LOAD_DISTANCE) {
+        setShouldLoad(true);
+      }
+    }
 
     if (state.opacity < INVIS_THRESHOLD && !mesh.visible && state.frame === 0) return;
 
@@ -138,6 +160,8 @@ function MediaPlane({
   }, [media.width, media.height, scale]);
 
   React.useEffect(() => {
+    if (!shouldLoad) return;
+
     const state = localState.current;
     state.ready = false;
     state.opacity = 0;
@@ -150,13 +174,19 @@ function MediaPlane({
       material.map = null;
     }
 
-    const tex = getTexture(media, () => {
+    const onLoad = () => {
       state.ready = true;
       setIsReady(true);
-    });
+    };
 
+    const tex = getTexture(media, onLoad);
     setTexture(tex);
-  }, [media]);
+
+    return () => {
+      // If unmounted before texture loads, remove callback to avoid stale setState
+      cancelTextureCallback(media, onLoad);
+    };
+  }, [media, shouldLoad]);
 
   React.useEffect(() => {
     const material = materialRef.current;
@@ -171,7 +201,7 @@ function MediaPlane({
     mesh.scale.copy(displayScale);
   }, [displayScale, texture, isReady]);
 
-  if (!texture || !isReady) return null;
+  if (!shouldLoad || !texture || !isReady) return null;
 
   return (
     <mesh
