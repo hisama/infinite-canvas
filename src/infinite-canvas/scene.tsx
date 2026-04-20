@@ -239,7 +239,7 @@ function Chunk({
 
   React.useEffect(() => {
     let canceled = false;
-    const run = () => !canceled && setPlanes(generateChunkPlanesCached(cx, cy, cz));
+    const run = () => !canceled && setPlanes(generateChunkPlanesCached(cx, cy, cz, media.length));
 
     if (typeof requestIdleCallback !== "undefined") {
       const id = requestIdleCallback(run, { timeout: 100 });
@@ -261,7 +261,7 @@ function Chunk({
   return (
     <group>
       {planes.map((plane) => {
-        const mediaItem = media[plane.mediaIndex % media.length];
+        const mediaItem = media[plane.mediaIndex];
         if (!mediaItem) return null;
 
         return (
