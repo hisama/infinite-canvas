@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
-    "@react-three/drei": "10.7.7",
     "@react-three/fiber": "9.4.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
