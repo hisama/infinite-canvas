@@ -1,7 +1,56 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import { KeyboardControls, Stats, useKeyboardControls, useProgress } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+
+// ---------------------------------------------------------------------------
+// Inline KeyboardControls — replaces @react-three/drei dependency
+// ---------------------------------------------------------------------------
+type KeyMap = { name: string; keys: string[] }[];
+
+type KeyboardContextValue = {
+  getKeys: () => Record<string, boolean>;
+};
+
+const KeyboardContext = React.createContext<KeyboardContextValue | null>(null);
+
+function KeyboardControls({ map, children }: { map: KeyMap; children: React.ReactNode }) {
+  const pressed = React.useRef<Record<string, boolean>>({});
+
+  React.useEffect(() => {
+    const keyToName: Record<string, string> = {};
+    for (const { name, keys } of map) {
+      for (const k of keys) keyToName[k] = name;
+    }
+
+    const onDown = (e: KeyboardEvent) => {
+      const name = keyToName[e.key];
+      if (name) pressed.current[name] = true;
+    };
+    const onUp = (e: KeyboardEvent) => {
+      const name = keyToName[e.key];
+      if (name) pressed.current[name] = false;
+    };
+
+    window.addEventListener("keydown", onDown);
+    window.addEventListener("keyup", onUp);
+    return () => {
+      window.removeEventListener("keydown", onDown);
+      window.removeEventListener("keyup", onUp);
+    };
+  }, [map]);
+
+  const getKeys = React.useCallback(() => pressed.current, []);
+  const value = React.useMemo(() => ({ getKeys }), [getKeys]);
+
+  return <KeyboardContext.Provider value={value}>{children}</KeyboardContext.Provider>;
+}
+
+function useKeyboardControls<T extends string>(): [never, () => Record<T, boolean>] {
+  const ctx = React.useContext(KeyboardContext);
+  if (!ctx) throw new Error("useKeyboardControls must be used inside KeyboardControls");
+  return [null as never, ctx.getKeys as () => Record<T, boolean>];
+}
+// ---------------------------------------------------------------------------
 import * as React from "react";
 import * as THREE from "three";
 import { useIsTouchDevice } from "~/src/use-is-touch-device";
@@ -332,9 +381,6 @@ function SceneController({
 
   const [chunks, setChunks] = React.useState<ChunkData[]>([]);
 
-  const { progress } = useProgress();
-  const maxProgress = React.useRef(0);
-
   // Build gallery items from media
   React.useEffect(() => {
     galleryItems = media.map((m) => ({
@@ -342,14 +388,6 @@ function SceneController({
       caption: [m.title, m.year, m.size, m.technique].filter(Boolean).join(" — "),
     }));
   }, [media]);
-
-  React.useEffect(() => {
-    const rounded = Math.round(progress);
-    if (rounded > maxProgress.current) {
-      maxProgress.current = rounded;
-      onTextureProgress?.(rounded);
-    }
-  }, [progress, onTextureProgress]);
 
   const handleImageClick = React.useCallback(
     (media: MediaItem) => {
@@ -585,7 +623,6 @@ function SceneController({
 export function InfiniteCanvasScene({
   media,
   onTextureProgress,
-  showFps = false,
   showControls = false,
   cameraFov = 60,
   cameraNear = 1,
@@ -613,7 +650,6 @@ export function InfiniteCanvasScene({
           <color attach="background" args={[backgroundColor]} />
           <fog attach="fog" args={[fogColor, fogNear, fogFar]} />
           <SceneController media={media} onTextureProgress={onTextureProgress} />
-          {showFps && <Stats className={styles.stats} />}
         </Canvas>
 
         {showControls && (
