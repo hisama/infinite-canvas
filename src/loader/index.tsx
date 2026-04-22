@@ -19,12 +19,10 @@ export function PageLoader({ progress }: { progress: number }) {
       const diff = progress - visualRef.current;
 
       if (diff > 0.1) {
-        // Lerp toward target, faster when further behind
         visualRef.current += diff * 0.08;
         setVisualProgress(visualRef.current);
         raf = requestAnimationFrame(animate);
       } else {
-        // Snap when close enough
         visualRef.current = progress;
         setVisualProgress(progress);
       }
@@ -41,16 +39,37 @@ export function PageLoader({ progress }: { progress: number }) {
     }
   }, [minTimeElapsed, progress, visualProgress]);
 
-  if (!show) {
-    return null;
-  }
+  if (!show) return null;
 
   const isHidden = minTimeElapsed && progress === 100 && visualProgress >= 99.5;
 
   return (
     <div className={`${styles.overlay} ${isHidden ? styles.hidden : styles.visible}`}>
-      <div className={styles.progressBarContainer}>
-        <div className={styles.progressBarFill} style={{ transform: `scaleX(${visualProgress / 100})` }} />
+      <div className={styles.content}>
+        <h1 className={styles.title}>Marco Cascella</h1>
+        <p className={styles.subtitle}>Gallery</p>
+
+        <div className={styles.progressBarContainer}>
+          <div
+            className={styles.progressBarFill}
+            style={{ transform: `scaleX(${visualProgress / 100})` }}
+          />
+        </div>
+
+        <div className={styles.instructions}>
+          <div className={styles.instructionRow}>
+            <span className={styles.key}>drag</span>
+            <span className={styles.action}>pan</span>
+          </div>
+          <div className={styles.instructionRow}>
+            <span className={styles.key}>scroll</span>
+            <span className={styles.action}>zoom</span>
+          </div>
+          <div className={styles.instructionRow}>
+            <span className={styles.key}>click</span>
+            <span className={styles.action}>view artwork</span>
+          </div>
+        </div>
       </div>
     </div>
   );
