@@ -647,7 +647,7 @@ export function InfiniteCanvasScene({
         >
           <color attach="background" args={[backgroundColor]} />
           <fog attach="fog" args={[fogColor, fogNear, fogFar]} />
-          <SceneController media={media} onTextureProgress={onTextureProgress} />
+          <SceneController media={media} />
         </Canvas>
 
         {showControls && (
