@@ -26,14 +26,13 @@
   gap: 2.4rem;
 }
 
-/* +20% from 160px */
+/* +20% from 192px = 230px */
 .logo {
-  width: 192px;
+  width: 230px;
   color: rgb(101, 82, 60);
   opacity: 0.9;
 }
 
-/* +20% from 0.75rem, sans-serif */
 .skyLabel {
   font-size: 0.9rem;
   font-family: Helvetica, Arial, sans-serif;
@@ -57,7 +56,6 @@
   background-color: var(--color-loader-bar-fill);
 }
 
-/* Navigation cross */
 .controls {
   display: flex;
   flex-direction: column;
@@ -65,19 +63,19 @@
   gap: 1rem;
 }
 
-/* -20% from 40px = 32px, gap from 6px = 5px */
+/* -20% from 32px = 26px */
 .crossGrid {
   display: grid;
-  grid-template-columns: repeat(3, 32px);
-  grid-template-rows: repeat(3, 32px);
-  gap: 5px;
+  grid-template-columns: repeat(3, 26px);
+  grid-template-rows: repeat(3, 26px);
+  gap: 4px;
 }
 
 .keySquare {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   border: 1px solid rgba(101, 82, 60, 0.25);
-  border-radius: 7px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,11 +84,10 @@
 }
 
 .crossEmpty {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
 }
 
-/* +20% from 0.7rem */
 .hint {
   font-size: 0.84rem;
   font-family: Helvetica, Arial, sans-serif;
