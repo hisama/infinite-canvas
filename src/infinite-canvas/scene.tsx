@@ -365,10 +365,8 @@ const createInitialState = (camZ: number): ControllerState => ({
 
 function SceneController({
   media,
-  onTextureProgress,
 }: {
   media: MediaItem[];
-  onTextureProgress?: (progress: number) => void;
 }) {
   const { camera, gl } = useThree();
   const isTouchDevice = useIsTouchDevice();
