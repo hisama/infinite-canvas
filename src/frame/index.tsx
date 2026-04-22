@@ -22,11 +22,11 @@ export function Frame() {
           </g>
         </svg>
       </h1>
-      <a className={styles.frame__back} href="https://sergiocalatroni.com/box/m_c/index.html">Home</a>
-      <a className={styles.frame__gallery} href="https://sergiocalatroni.com/box/m_c/gallery/index.html">Gallery</a>
+      <a className={styles.frame__back} href="https://www.marcocascella.com">Home</a>
+      <a className={styles.frame__gallery} href="https://www.marcocascella.com/gallery">Gallery</a>
       <a className={styles.frame__sky} href="https://infinite-canvas-alpha.vercel.app">Sky</a>
-      <a className={styles.frame__archive} href="https://sergiocalatroni.com/box/m_c/inventory/index.html">Inventory</a>
-      <a className={styles.frame__github} href="https://sergiocalatroni.com/box/m_c/about.html">About</a>
+      <a className={styles.frame__archive} href="https://www.marcocascella.com/inventory">Inventory</a>
+      <a className={styles.frame__github} href="https://www.marcocascella.com/about.html">About</a>
       <div className={styles.frame__credits}>
         <span></span>
         <a href="#"></a>
