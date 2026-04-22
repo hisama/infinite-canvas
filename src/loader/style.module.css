@@ -26,14 +26,17 @@
   gap: 2.4rem;
 }
 
+/* +20% from 160px */
 .logo {
-  width: 160px;
+  width: 192px;
   color: rgb(101, 82, 60);
   opacity: 0.9;
 }
 
+/* +20% from 0.75rem, sans-serif */
 .skyLabel {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
+  font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: rgba(101, 82, 60, 0.45);
@@ -59,21 +62,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
+/* -20% from 40px = 32px, gap from 6px = 5px */
 .crossGrid {
   display: grid;
-  grid-template-columns: repeat(3, 40px);
-  grid-template-rows: repeat(3, 40px);
-  gap: 6px;
+  grid-template-columns: repeat(3, 32px);
+  grid-template-rows: repeat(3, 32px);
+  gap: 5px;
 }
 
 .keySquare {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(101, 82, 60, 0.25);
-  border-radius: 8px;
+  border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,12 +86,14 @@
 }
 
 .crossEmpty {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
+/* +20% from 0.7rem */
 .hint {
-  font-size: 0.7rem;
+  font-size: 0.84rem;
+  font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(101, 82, 60, 0.4);
