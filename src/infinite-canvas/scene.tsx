@@ -365,8 +365,10 @@ const createInitialState = (camZ: number): ControllerState => ({
 
 function SceneController({
   media,
+  onTextureProgress,
 }: {
   media: MediaItem[];
+  onTextureProgress?: (progress: number) => void;
 }) {
   const { camera, gl } = useThree();
   const isTouchDevice = useIsTouchDevice();
@@ -378,6 +380,18 @@ function SceneController({
   const mouseDownPos = React.useRef({ x: 0, y: 0 });
 
   const [chunks, setChunks] = React.useState<ChunkData[]>([]);
+
+  // Report progress: ramp to 100 over ~2s after mount so the loader dismisses
+  React.useEffect(() => {
+    if (!onTextureProgress) return;
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress = Math.min(100, progress + 5);
+      onTextureProgress(progress);
+      if (progress >= 100) clearInterval(interval);
+    }, 100);
+    return () => clearInterval(interval);
+  }, [onTextureProgress]);
 
   // Build gallery items from media
   React.useEffect(() => {
@@ -620,6 +634,7 @@ function SceneController({
 
 export function InfiniteCanvasScene({
   media,
+  onTextureProgress,
   showControls = false,
   cameraFov = 60,
   cameraNear = 1,
@@ -646,7 +661,7 @@ export function InfiniteCanvasScene({
         >
           <color attach="background" args={[backgroundColor]} />
           <fog attach="fog" args={[fogColor, fogNear, fogFar]} />
-          <SceneController media={media} />
+          <SceneController media={media} onTextureProgress={onTextureProgress} />
         </Canvas>
 
         {showControls && (
