@@ -23,28 +23,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.4rem;
 }
 
-.title {
-  font-size: 1.4rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
+.logo {
+  width: 160px;
   color: rgb(101, 82, 60);
-  margin: 0;
-  text-transform: uppercase;
+  opacity: 0.9;
 }
 
-.subtitle {
-  font-size: 0.9rem;
-  letter-spacing: 0.2em;
-  color: rgba(101, 82, 60, 0.5);
-  margin: -1.5rem 0 0 0;
+.skyLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
+  color: rgba(101, 82, 60, 0.45);
+  margin-top: -1.8rem;
 }
 
 .progressBarContainer {
-  width: 160px;
+  width: 140px;
   background-color: var(--color-loader-bar-bg);
   height: 1px;
   overflow: hidden;
@@ -55,35 +52,44 @@
   width: 100%;
   transform-origin: left;
   background-color: var(--color-loader-bar-fill);
-  transition: transform 0.1s linear;
 }
 
-.instructions {
+/* Navigation cross */
+.controls {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  opacity: 0.45;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.instructionRow {
+.crossGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 6px;
+}
+
+.keySquare {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(101, 82, 60, 0.25);
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  justify-content: space-between;
+  justify-content: center;
+  color: rgba(101, 82, 60, 0.6);
+  background: rgba(101, 82, 60, 0.03);
 }
 
-.key {
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  color: rgb(101, 82, 60);
-  text-transform: uppercase;
-  min-width: 50px;
-  text-align: right;
+.crossEmpty {
+  width: 40px;
+  height: 40px;
 }
 
-.action {
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  color: rgb(101, 82, 60);
+.hint {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: rgba(101, 82, 60, 0.4);
+  margin: 0;
 }
