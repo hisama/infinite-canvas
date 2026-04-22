@@ -620,7 +620,6 @@ function SceneController({
 
 export function InfiniteCanvasScene({
   media,
-  onTextureProgress,
   showControls = false,
   cameraFov = 60,
   cameraNear = 1,
