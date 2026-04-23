@@ -35,7 +35,10 @@
 .frame a:focus {
   outline: none;
 }
-
+.frame a {
+  user-select: none;
+  -webkit-user-select: none;
+}
 .frame__title {
   grid-area: title;
   margin: 0;
