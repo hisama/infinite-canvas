@@ -24,10 +24,10 @@ export function Frame() {
       </h1>
       <a className={styles.frame__home} href="https://www.marcocascella.com">Home</a>
       <a className={styles.frame__sky} href="https://infinite-canvas-alpha.vercel.app">Sky</a>
-      <a className={styles.frame__archive} href="https://www.marcocascella.com/inventory">Inventory</a>
-      <a className={styles.frame__about} href="https://www.marcocascella.com/about">About</a>
-      <a className={styles.frame__gallery} href="https://www.marcocascella.com/gallery">Gallery</a>
-      <a className={styles.frame__contact} href="https://www.marcocascella.com/contact">Contact</a>
+      <a className={styles.frame__archive} href="https://www.marcocascella.com/inventory/">Inventory</a>
+      <a className={styles.frame__about} href="https://www.marcocascella.com/about.html">About</a>
+      <a className={styles.frame__gallery} href="https://www.marcocascella.com/gallery/">Gallery</a>
+      <a className={styles.frame__contact} href="mailto:info@marcocascella.com">Contact</a>
       <div className={styles.frame__credits}>
         <span></span>
         <a href="#"></a>
